@@ -1,0 +1,58 @@
+import 'package:tesla/models/tesla_model.dart';
+
+final myModel = [
+  TeslaModel(
+    modelName: "Model S",
+    modelDes1: "Order online for ",
+    modelDes2: "Touchless Deliver",
+    imgPath: "assets/image/homepage.jpeg",
+    btn1: "Custom Order",
+    btn2: "Existing Inventory",
+    isFirst: true,
+  ),
+  TeslaModel(
+    modelName: "Model Y",
+    modelDes1: "Order online for ",
+    modelDes2: "Touchless Deliver",
+    imgPath: "assets/image/modelY.jpeg",
+    btn1: "Custom Order",
+    btn2: "Existing Inventory",
+    isFirst: false,
+  ),
+  TeslaModel(
+    modelName: "Model 3",
+    modelDes1: "Order online for ",
+    modelDes2: "Touchless Deliver",
+    imgPath: "assets/image/modelS.jpeg",
+    btn1: "Custom Order",
+    btn2: "Existing Inventory",
+    isFirst: false,
+  ),
+  TeslaModel(
+    modelName: "Model X",
+    modelDes1: "Order online for ",
+    modelDes2: "Touchless Deliver",
+    imgPath: "assets/image/modelX.jpeg",
+    btn1: "Custom Order",
+    btn2: "Existing Inventory",
+    isFirst: false,
+  ),
+  TeslaModel(
+    modelName: "Solar Panels",
+    modelDes1: "Lowest Cost Solart Panels in America",
+    modelDes2: "",
+    imgPath: "assets/image/solarPanel.jpeg",
+    btn1: "Order Now",
+    btn2: "Learn More",
+    isFirst: false,
+  ),
+  TeslaModel(
+    modelName: "Solar Roof",
+    modelDes1: "Produce Clean Energy From Your Roof",
+    modelDes2: "",
+    imgPath: "assets/image/solar-roof.jpeg",
+    btn1: "Order Now",
+    btn2: "Learn More",
+    isFirst: false,
+  ),
+];
