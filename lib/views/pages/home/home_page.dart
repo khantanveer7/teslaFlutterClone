@@ -24,7 +24,8 @@ class _HomePageState extends State<HomePage> {
             children: [
               Align(
                 alignment: Alignment.topRight,
-                child: DrawerHeader(
+                child: Container(
+                  height: 100,
                   child: IconButton(
                     onPressed: () {
                       Navigator.pop(context);
@@ -142,6 +143,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Card(
                       child: ListTile(
+                        minLeadingWidth: 0,
                         onTap: () => Navigator.pop(context),
                         leading: Icon(Icons.language),
                         title: Text("India"),
