@@ -20,12 +20,11 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         endDrawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               Align(
                 alignment: Alignment.topRight,
-                child: Container(
-                  height: 100,
+                child: DrawerHeader(
                   child: IconButton(
                     onPressed: () {
                       Navigator.pop(context);
@@ -34,34 +33,124 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              ListTile(
-                leading: Icon(Icons.account_circle),
-                title: Text('Option 1'),
-                onTap: () {
-                  // This line code will close drawer programatically....
-                  // Navigator.pop(context);
-                },
-              ),
-              Divider(
-                height: 2.0,
-              ),
-              ListTile(
-                leading: Icon(Icons.accessibility),
-                title: Text('Option 2'),
-                onTap: () {
-                  // Navigator.pop(context);
-                },
-              ),
-              Divider(
-                height: 2.0,
-              ),
-              ListTile(
-                leading: Icon(Icons.account_box),
-                title: Text('Option 3'),
-                onTap: () {
-                  // Navigator.pop(context);
-                },
-              )
+              Expanded(
+                  child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ListView(
+                  children: [
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Model S")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Model 3")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Model X")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Model Y")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Solar Roof")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Solar Panel")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Existing Inventory")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Used Inventory")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Tade-In")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Test Drive")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Powerwall")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Commercial Energy")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Existing Inventory")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Utilities")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Chargin")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Find Us")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Support")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Shop")),
+                    ),
+                    Card(
+                      child: ListTile(
+                          onTap: () => Navigator.pop(context),
+                          title: Text("Account")),
+                    ),
+                    Card(
+                      child: ListTile(
+                        onTap: () => Navigator.pop(context),
+                        title: Text("More"),
+                        trailing: Icon(Icons.chevron_right),
+                      ),
+                    ),
+                    Card(
+                      child: ListTile(
+                        onTap: () => Navigator.pop(context),
+                        leading: Icon(Icons.language),
+                        title: Text("India"),
+                        subtitle: Text("English"),
+                      ),
+                    ),
+                  ],
+                ),
+              ))
             ],
           ),
         ),
